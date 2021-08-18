@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(to right, rgb(46, 1, 18), rgba(125,6,51,1));
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container > * {
+    display: grid;
+    padding: 10px;
+    text-align: center;
+}
+
+p{
+    color: white;
+    font-size: 25px;
+    padding: 50px;
+}
+
+.fase_grupos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 500px;
+}
+
+.grupo{
+    background-color: #31112C;
+   border: 1px solid #F2A07B;
+   padding: 1rem;
+   color: white;
+   text-align: center;
+
+}
+
+.octavos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.llave_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: .5rem;
+}
+
+.escudo{
+    display: flex;
+    max-width: 150px;
+    max-height: 150px;
+}
