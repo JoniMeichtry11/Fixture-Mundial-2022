@@ -1,23 +1,182 @@
 /* Escritorios muy grandes
 -------------------------------------------------------------------------------- */
-@media (min-width: 1200px) {
+@media (min-width: 2000px) {
+    .container__groups{
+        grid-template-columns: repeat(4, 480px);
+    }
+    .container__groups div{
+        margin: 0rem;
+        margin-bottom: 1rem;
+    }
+    .container__final__octavos{
+        flex-wrap: nowrap;
+    }
+    
+}
+
+/* Escritorios */
+
+@media (max-width: 1670px){
+    .container__groups{
+        grid-template-columns: repeat(2, 480px);
+    }
+    .container__groups div{
+        margin: 0rem;
+        margin-bottom: 1rem;
+    }
     
 }
 
 /* Tablets en horizontal y escritorios normales
 -------------------------------------------------------------------------------- */
-@media (min-width: 768px) and (max-width: 1199px){
-
+@media (min-width: 768px) and (max-width: 1140px){
+    .container__groups{
+        grid-template-columns: repeat(auto-fit, 360px);
+    }
+    .container__groups div{
+        margin: 0;
+    }
 }
 
 /* Móviles en horizontal o tablets en vertical
 --------------------------------------------------------------------------------- */
 @media (max-width: 767px) {
+    .container__groups{
+        grid-template-columns: repeat(auto-fit, 360px);
+    }
+    .container__groups div{
+        margin: 0rem;
+    }
+    .logo{
+        display: flex;
+    }
+    .logo2{
+        display: none;
+    }
+    .container__final__semis{
+        display: flex;
+        justify-content: space-around;
+        font-size: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .container__final__semis img{
+        width: 10rem;
+        height: 6.2rem;
+    }
 
+    .container__final__end{
+        display: flex;
+        justify-content: space-around;
+        font-size: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+    .container__final__end img{
+        width: 8rem;
+        height: 6rem;
+    }
+    
 }
 
 /* Móviles en vertical
 ------------------------------------------------------------------------------- */
-@media (max-width: 480px) {
+@media (max-width: 515px) {
+    .container__groups{
+        grid-template-columns: repeat(auto-fill, 80vw);
+        
+    }
+    .container__groups div{
+        margin: 0.4rem;
+        font-size: 1.3rem;
+    }
+    .container__groups__nombres{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo2{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20%;
+        opacity: 0;
+    }
     
+    #logo2{
+        -webkit-transition: all 2s ease;
+        -o-transition: all 2s ease;
+        transition: all 2s ease;
+    }
+
+    .btn{
+        left: 50%;
+        margin-left: -80px;
+    }
+    .btn__color{
+        font-size: 1rem;
+    }
+    .paragraphs{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .container__final__cuartos{
+        display: flex;
+        justify-content: space-around;
+        font-size: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .container__final__cuartos img{
+        width: 5rem;
+        height: 3.1rem;
+    }
+    
+    .container__final__semis{
+        display: flex;
+        justify-content: space-around;
+        font-size: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .container__final__semis img{
+        width: 5rem;
+        height: 3.1rem;
+    }
+    
+    .container__final__end{
+        display: flex;
+        justify-content: space-around;
+        font-size: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+    .container__final__end img{
+        width: 5rem;
+        height: 3.1rem;
+    }
+    
+    .container__final__campeon{
+        display: flex;
+        justify-content: space-around;
+        font-size: 7rem;
+    }
+    
+    .container__final__campeon img{
+        width: 15rem;
+        height: 10rem;
+        margin: 20px;
+    }   
 }
